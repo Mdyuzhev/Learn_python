@@ -1,0 +1,16 @@
+from modules.list_modules import *
+
+# range1(21)
+# list_range(1000)
+# list_range_ex()
+# squares(1000001)
+# list_gen()
+# list_players()
+# print_list_of_players()
+# foods()
+# swed_table()
+# cars_if()
+# check_age(18)
+# check_list()
+# car_subaru()
+available_list()
