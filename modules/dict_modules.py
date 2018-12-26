@@ -37,5 +37,20 @@ def lang():
     print("Sarah's favorite language is " +
           favorite_languages['sarah'].title() +
           ".")
+    for key, value in favorite_languages.items():
+        print(key.title() + "'s favorite language is " + value.title() + ".")
+
+
+
+def mariya():
+    mariya_credentials = {
+        'first_name': 'mariya',
+        'last_name': 'dyuzheva',
+        'city': 'moscow',
+        'district': 'teplak',
+    }
+    for key, value in mariya_credentials.items():
+        print("\nKey: " + key)
+        print("Value: " + value)
 
 
