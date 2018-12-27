@@ -39,6 +39,11 @@ def lang():
           ".")
     for key, value in favorite_languages.items():
         print(key.title() + "'s favorite language is " + value.title() + ".")
+    friends = ['phil', 'sarah']
+    for name in favorite_languages.keys():
+        print(name.title())
+        if name in friends:
+            print("Hi " + name.title() + ", I see your favorite languages is " + favorite_languages[name].title() + "!")
 
 
 def mariya():
@@ -51,3 +56,58 @@ def mariya():
     for key, value in mariya_credentials.items():
         print("\nKey: " + key)
         print("Value: " + value)
+
+
+def lang_sorted():
+    favorite_languages = {
+        'jen': 'python',
+        'sarah': 'c',
+        'edward': 'ruby',
+        'phil': 'python',
+    }
+    for name in sorted(favorite_languages.keys()):
+        print(name.title() + "thank you for taking the poll!")
+    print("")
+    print("The following languages have been mentioned:")       # список языков в словаре
+    for language in favorite_languages.values():
+        print(language.title())
+    print("")
+    print("The following languages have been mentioned:")  # список уникальных значений языков в словаре
+    for language in set(favorite_languages.values()):
+        print(language.title())
+
+
+def aliens():
+    alien_0 = {'color': 'green', 'points': "5"}
+    alien_1 = {'color': 'yellow', 'points': "15"}
+    alien_2 = {'color': 'red', 'points': "10"}
+    alien_3 = {'color': 'blue', 'points': "15"}
+    alien_4 = {'color': 'purple', 'points': "5"}
+    aliens = [alien_0, alien_1, alien_2, alien_3, alien_4]
+    for alien in aliens:
+        print(alien)
+
+
+def aliens_gen():
+    aliens = []
+    for alien_number in range(30):
+        new_alien = {'color': 'green', 'points': "5", 'speed': 'slow'}
+        aliens.append(new_alien)
+    for alien in aliens[:10]:
+        print(alien)
+    print("")
+    print("---------------------------------------")
+    print("Total number of aliens: " + str(len(aliens)))
+    print("---------------------------------------")
+    for alien in aliens[0:3]:
+        if alien['color'] == 'green':
+            alien['color'] = 'yellow'
+            alien['speed'] = 'medium'
+            alien['points'] = 10
+    for alien in aliens[0:5]:
+        print(alien)
+    print("---------------------------------------")
+
+
+
+
