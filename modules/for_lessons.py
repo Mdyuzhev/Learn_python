@@ -21,4 +21,3 @@ def counting_continue():
         if current_number % 2 == 0:
             continue
         print(current_number)
-
