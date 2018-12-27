@@ -68,13 +68,30 @@ def lang_sorted():
     for name in sorted(favorite_languages.keys()):
         print(name.title() + "thank you for taking the poll!")
     print("")
-    print("The following languages have been mentioned:")       # список языков в словаре
+    print("The following languages have been mentioned:")  # список языков в словаре
     for language in favorite_languages.values():
         print(language.title())
     print("")
     print("The following languages have been mentioned:")  # список уникальных значений языков в словаре
     for language in set(favorite_languages.values()):
         print(language.title())
+
+
+def lang_many():
+    favorite_languages = {
+        'jen': ['python', 'c'],
+        'sarah': ['c'],
+        'edward': ['ruby', 'python', 'java'],
+        'phil': ['python'],
+    }
+    for name, languages in favorite_languages.items():
+        if len(languages) == 1:
+            print("\n" + name.title() + "'s favorite languages are:")
+        else:
+            print("\n" + name.title() + "'s favorites languages are:")
+
+        for language in languages:
+            print("\t" + language.title())
 
 
 def aliens():
@@ -109,5 +126,32 @@ def aliens_gen():
     print("---------------------------------------")
 
 
+def pizza():
+    pizza = {
+        'crust': 'thik',
+        'toppings': ['mushrooms', 'extra cheese'],
+    }
+    print("You ordered a " + pizza['crust'] + "-crust pizza " + "with the following toppings:")
+    for topping in pizza['toppings']:
+        print("\t" + topping)
 
 
+def many_users():
+    users = {
+        'Эйнштейн': {
+            'first': 'albert',
+            'last': 'einsteint',
+            'location': 'princeton'
+        },
+        'Кюри': {
+            'first': 'marie',
+            'last': 'curie',
+            'location': 'paris'
+        }
+    }
+    for username, user_info in users.items():
+        print("\nUsername: " + username)
+        full_name = user_info['first'] + " " + user_info['last']
+        location = user_info['location']
+        print("\tFull name: " + full_name.title())
+        print("\tLocation: " + location.title())
