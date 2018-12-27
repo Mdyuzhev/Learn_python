@@ -41,7 +41,6 @@ def lang():
         print(key.title() + "'s favorite language is " + value.title() + ".")
 
 
-
 def mariya():
     mariya_credentials = {
         'first_name': 'mariya',
@@ -52,5 +51,3 @@ def mariya():
     for key, value in mariya_credentials.items():
         print("\nKey: " + key)
         print("Value: " + value)
-
-
