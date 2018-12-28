@@ -20,7 +20,7 @@ from modules.input_modules import *
 
 # ---------------------------------------------
 
-# Словарь в словаре
+"""---Словарь в словаре---"""
 # many_users()
 
 # ---------------------------------------------
@@ -32,9 +32,25 @@ from modules.input_modules import *
 
 # ---------------------------------------------
 
-# Оператор вычисления остатка -- в Python 2.7 raw_input()
+"""Оператор вычисления остатка % -- в Python 2.7 raw_input()"""
 # even_or_odd()
 # counting()
 # parrot_while()
 # parrot_breake()
-counting_continue()
+# counting_continue()
+
+# ---------------------------------------------
+
+# While со списками и словарями
+# confirmed_users()
+# pets()
+# mountain_poll()
+
+# ---------------------------------------------
+
+"""Вызов функции с параметрами и одним значением по умолчанию"""
+# describe_pets('pesik')
+# print(build_person('jimmy', 'hendrix', age=27))
+"""Использование цикла while"""
+greeter_while()
+
