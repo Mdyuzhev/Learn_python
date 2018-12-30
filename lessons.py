@@ -52,5 +52,15 @@ from modules.input_modules import *
 # describe_pets('pesik')
 # print(build_person('jimmy', 'hendrix', age=27))
 """Использование цикла while"""
-greeter_while()
+# greeter_while()
 
+"""Передача списка в метод"""
+# usernames = ['Misha', 'Maksim', 'Vova']
+# greeter_users(usernames)
+
+"""Изменение списка в функции"""
+
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+print_models(unprinted_designs[:], completed_models)
+show_completed_models(completed_models)
